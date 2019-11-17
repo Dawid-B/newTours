@@ -77,6 +77,18 @@ public class ReservationTest {
 			
 			driver.findElement(By.name("findFlights")).click();
 			
+			String outFlightRadioXpath = "/html/body/div/table/tbody/tr/td[2]/table/"
+					+ "tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/"
+					+ "tr[5]/td/form/table[1]/tbody/tr[5]/td[1]/input";
+			driver.findElement(By.xpath(outFlightRadioXpath)).click();
+			
+			String inFlightRadioXpath = "/html/body/div/table/tbody/tr/td[2]/table/tbody/"
+					+ "tr[4]/td/table/tbody/tr/td[2]/table/tbody/"
+					+ "tr[5]/td/form/table[2]/tbody/tr[5]/td[1]/input";
+			driver.findElement(By.xpath(inFlightRadioXpath)).click();
+			
+			driver.findElement(By.name("reserveFlights")).click();
+			
 		}
 
 		

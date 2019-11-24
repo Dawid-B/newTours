@@ -93,10 +93,11 @@ public class ReservationTest {
 
 		
 
-		//@After
+		@After
 		public void tearDown() {
-			driver.close();
+			Init.end();
 		}
+		
 	
 }
 

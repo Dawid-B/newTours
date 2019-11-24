@@ -26,7 +26,7 @@ public class MenuTest {
 		String title = driver.getTitle();
 		System.out.println(title);
 		
-		Thread.sleep(millis);//do wstrzymywania kodu w milisekundach, lepiej tego nie robić bo to niezgodne ze sztuką
+		//Thread.sleep(millis);//do wstrzymywania kodu w milisekundach, lepiej tego nie robić bo to niezgodne ze sztuką
 	}
 
 	@Test
